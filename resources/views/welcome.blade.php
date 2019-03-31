@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    HAKATON WELCOME
                 </div>
 
                 <div class="links">
