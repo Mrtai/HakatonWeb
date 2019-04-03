@@ -9,7 +9,7 @@ class ThiSinhController extends Controller
 {
     public function getAll(){
         $ts= ThiSinh::all();
-        $kq = array ("Message" => "Success", "Status" => "201", "data"=>$ts);
+        $kq = array ("Message" => "Success", "Status" => "200", "data"=>$ts);
         return json_encode($kq);
     }
     public function add(Request $request){

@@ -10,6 +10,9 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
+// header('Access-Control-Allow-Origin: *');
+// header('Access-Control-Allow-Methods: *');
+// header('Access-Control-Allow-Headers: *');
 
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
@@ -40,7 +43,8 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
-
+//$app->configure('cors');
+//$app->register(Barryvdh\Cors\ServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Return The Application
@@ -51,5 +55,6 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
+
 
 return $app;
